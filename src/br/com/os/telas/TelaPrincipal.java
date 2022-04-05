@@ -271,7 +271,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         int confirma = JOptionPane.showConfirmDialog(null, "Confirma a emissão deste relátorio?", "Atenção", JOptionPane.YES_NO_OPTION);
         if (confirma == JOptionPane.YES_OPTION) {
             try {
-                 JasperPrint print = JasperFillManager.fillReport(getClass().getResourceAsStream("/reports/clientes.jasper"), null, conexao);
+                 JasperPrint print = JasperFillManager.fillReport(getClass().getResourceAsStream("/reports/Clientes.jasper"), null, conexao);
                 JasperViewer.viewReport(print, false);
             } catch (JRException e) {
                 JOptionPane.showMessageDialog(null, e);
